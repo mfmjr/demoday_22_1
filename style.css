@@ -1,203 +1,100 @@
 body {
   font-size: 12px;
-  font-family: Comic Sans MS;
-  padding: 50px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* font-family: Comic Sans MS; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 2vw 2vw;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+
+  background-image: linear-gradient(to right bottom, #ebeef1, #8ca8ee);
 }
 
-div.main-card {
-  max-width: 300px;
-  box-shadow: -5px 2px 18px 4px #ccc;
+.main-card {
+  /* box-shadow: 0px 2px 18px 4px #000; */
+  display: inline;
+
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
 }
 
 .cover-photo {
   background-image: url(https://miro.medium.com/max/1400/1*0E9gGRlF-scbUaEzPopCjA.jpeg);
-  width: 300px;
-  height: 100px;
-  background-size: 155%;
+  width: 180px;
+  height: 70px;
+  background-size: 165%;
   background-position: right;
-  /* background-size: cover; */
-  /* background-repeat: repeat; */
+  padding: 5px;
 }
 
 .photo {
-  background: #f9f9f9;
-  width: 300px;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background: #ffffff;
+  width: 180px;
+  height: 70px;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
+  padding: 5px;
 }
 
 img {
   position: relative;
-  top: -50px;
+  width: 80px;
+  height: 110px;
+  top: -83px;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 120%;
   border-radius: 50%;
   box-shadow: -1px 1px 11px 6px rgba(189, 172, 172, 0.33);
   border: 2px solid #000;
   color: transparent;
-}
-.content {
-  background: #f9f9f9;
-  width: 300px;
-  height: 100px;
-  position: relative;
-  top: -35px;
+  margin-top: 30px;
 }
 
-.contact {
-  background: #30354d;
-  width: 300px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.content {
+  background: #f9f9f9;
+  width: 180px;
+  height: 150px;
+  position: relative;
+  top: -35px;
+  padding: 5px;
 }
 
 h2.name,
-h3,
-a {
-  margin: 0;
+a,
+h3 {
+  margin: 2px;
+  text-align: center;
+}
+
+.tera {
   text-align: center;
 }
 
 h2.name {
-  padding-bottom: 20px;
+  font-size: 14px;
 }
 
 h3.fullstack {
-  padding-bottom: 10px;
+  font-size: 12px;
 }
 
-a {
-  color: #0ab581;
-  text-decoration: none;
+.team {
+  font-size: 10px;
+}
+
+.about {
+  color: #020303;
+
+  font-size: 8px;
+  text-align: justify;
 }
 
 a:hover {
-  color: black;
-}
-
-ul {
-  padding: 0;
-}
-
-.fa {
-  font-size: 22px;
-  padding: 10px;
-  text-decoration: none;
-  color: #0ab581;
-}
-
-.fa:hover {
-  color: white;
-}
-
-a.certified {
-  color: black;
-  cursor: pointer;
-}
-
-a.certified:hover {
-  color: #0ab581;
-}
-
-div.main-card:hover {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+  color: rgb(76, 75, 75);
 }
 
 li {
-  display: inline;
+  /* display: inline; */
   width: 50px;
   height: 50px;
   color: #0ab581;
 }
-
-.btn-names {
-  border: none;
-  font-size: 2rem;
-  padding: 2rem 5rem;
-  border-radius: 0.7rem;
-  color: white;
-  background-color: orangered;
-  cursor: pointer;
-}
-
-/* .images {
-  display: flex;
-  box-shadow: #30354d 0px 0px 0px 1px;
-}
-
-.images img {
-  display: block;
-  width: 80rem;
-  margin: 4rem;
-}
-
-.images img.parallel {
-  width: 40rem;
-  margin: 2rem;
-  border: 3rem solid white;
-  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  box-shadow: inset 0px 1px;
-} */
