@@ -15,19 +15,19 @@ const showCard = (data) => {
   studentsEl.innerHTML = `
    
   <div class="main-card">
-       <div class="cover-photo"></div>
-          <div class="photo">
+    <div class="cover-photo"></div>
+        <div class="photo">
             <img
               src="${data[index].img}"
               alt=""
             />
-          </div>
+        </div>
   
-          <div class="content">
-            <h2 class="name">${data[index].name}</h2>
+        <div class="content">
+          <h2 class="name">${data[index].name}</h2>
             <h3 class="fullstack">
-            <div class="team">Turma 22.1</div>
-              Full Stack Development<br />
+             <div class="team">Turma 22.1</div>
+               Full Stack Development<br />
               <a
                 href=""
                 class="certified"
@@ -37,12 +37,17 @@ const showCard = (data) => {
               >
             </h3>
             
-              <div class="about">
-                ${data[index].about}</div>              
-            
-          </div>
-        </div>        
-      </div>
+            <div class="about">${data[index].about}</div>  
+            </div> 
+              <div class="footer"> 
+                <ul >
+                    <li>AS</li>
+                    <li>BA</li>
+                </ul>   
+              </div>
+    </div>
+  
+
        `;
 
   container.appendChild(studentsEl);
